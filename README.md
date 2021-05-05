@@ -7,3 +7,5 @@ Elkészített feladatok:
 -3. a)
 -3. e) elkezdve
 -4. 
+
+(Először a main branchre került fel a 3.a feladat)
