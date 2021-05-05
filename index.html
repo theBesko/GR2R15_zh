@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Map</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script src="./map.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h3 id="locationName"></h3>
+    <label for="locations">Válassz egy helyszínt:</label>
+    <select
+      onclick="changeMapDropdown()"
+      name="locations"
+      id="locations"
+    ></select>
+    <div id="map"></div>
+    Léptess lista szerint:
+    <button onclick="changeMap('previous')">Előző helyszín</button>
+    <button onclick="changeMap('next')">Következő helyszín</button>
+    <br />
+    
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGb4GJyTlFM93zZW-7yKcSzkHPdmpODhc&callback=initMap&libraries=&v=weekly"
+      async
+      type="text/javascript"
+    ></script>
+  </body>
+</html>
